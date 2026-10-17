@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "updated": "2026-10-17",
+  "audit_period": "28 September to 2 October 2026 (ten sessions: snack and lunch, Monday to Friday)",
+  "survey_period": "October 2025, 105 respondents. The October 2026 dates on the PDF printouts are print dates, not collection dates.",
+  "bin_rubric": {
+    "G": "0 to 1 misplaced items",
+    "Y": "2 to 4 misplaced items",
+    "R": "5 or more misplaced items, or serious wet food or liquid on recyclables"
+  },
+  "litter_rubric": {
+    "G": "0 to 5 visible pieces",
+    "Y": "6 to 15 pieces",
+    "R": "16 or more pieces, or a concentrated pile"
+  },
+  "limitations": [
+    "Grades are visual estimates by student auditors during about five minutes per check, so they can differ between auditors.",
+    "Auditors checked the worst-looking bin cluster in each zone. Results describe those checks, not all campus bins or all waste.",
+    "Repeated checks can include the same bins and the same remaining litter. 60 bin checks are not 60 different bins.",
+    "Grades are categories, not item counts. They cannot be turned into item percentages, and Red implies no minimum count.",
+    "Green does not mean zero litter or perfect sorting. Some Green organic-bin grades were given to empty bins.",
+    "The audit standard describes a surface scan, while the auditor guide says to lift lids. The records do not show which was used each time.",
+    "Friday was a half day, so conditions differed from other days.",
+    "The survey (multiple selections allowed on the location question) and the audit use different measures about a year apart. No change over time is calculated.",
+    "The basketball hub was not a separate survey location option, so no survey figure is shown for it."
+  ]
+}

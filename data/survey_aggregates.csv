@@ -1,0 +1,34 @@
+question_id,question_text,category,count,denominator,scale_low_label,scale_high_label,multiple_select,source_file,source_page
+sorting,Students sort trash into the proper bins.,1,25,105,1 Never,4 Always,False,Survey responses.pdf,1
+sorting,Students sort trash into the proper bins.,2,44,105,1 Never,4 Always,False,Survey responses.pdf,1
+sorting,Students sort trash into the proper bins.,3,30,105,1 Never,4 Always,False,Survey responses.pdf,1
+sorting,Students sort trash into the proper bins.,4,6,105,1 Never,4 Always,False,Survey responses.pdf,1
+notice_effort,How often do you notice students making an effort to keep the school clean?,1,36,105,1 Never,4 Always,False,Survey responses.pdf,1
+notice_effort,How often do you notice students making an effort to keep the school clean?,2,52,105,1 Never,4 Always,False,Survey responses.pdf,1
+notice_effort,How often do you notice students making an effort to keep the school clean?,3,15,105,1 Never,4 Always,False,Survey responses.pdf,1
+notice_effort,How often do you notice students making an effort to keep the school clean?,4,2,105,1 Never,4 Always,False,Survey responses.pdf,1
+trash_around,There is trash around the school campus.,1,7,105,1 Never,4 Always,False,Survey responses.pdf,2
+trash_around,There is trash around the school campus.,2,16,105,1 Never,4 Always,False,Survey responses.pdf,2
+trash_around,There is trash around the school campus.,3,46,105,1 Never,4 Always,False,Survey responses.pdf,2
+trash_around,There is trash around the school campus.,4,36,105,1 Never,4 Always,False,Survey responses.pdf,2
+people_litter,People litter on campus.,1,5,105,"1 No, never","4 Yes, all the time",False,Survey responses.pdf,3
+people_litter,People litter on campus.,2,22,105,"1 No, never","4 Yes, all the time",False,Survey responses.pdf,3
+people_litter,People litter on campus.,3,46,105,"1 No, never","4 Yes, all the time",False,Survey responses.pdf,3
+people_litter,People litter on campus.,4,32,105,"1 No, never","4 Yes, all the time",False,Survey responses.pdf,3
+care,I care about keeping my school clean. (scale runs from caring to not caring),1,47,105,"1 Yes, very much","4 No, not really",False,Survey responses.pdf,9
+care,I care about keeping my school clean. (scale runs from caring to not caring),2,41,105,"1 Yes, very much","4 No, not really",False,Survey responses.pdf,9
+care,I care about keeping my school clean. (scale runs from caring to not caring),3,13,105,"1 Yes, very much","4 No, not really",False,Survey responses.pdf,9
+care,I care about keeping my school clean. (scale runs from caring to not caring),4,4,105,"1 Yes, very much","4 No, not really",False,Survey responses.pdf,9
+expected_effect,How effective could environmental activities or social media campaigns be? (expectation),1,17,105,1 Ineffective,4 Very effective,False,Survey responses.pdf,9
+expected_effect,How effective could environmental activities or social media campaigns be? (expectation),2,40,105,1 Ineffective,4 Very effective,False,Survey responses.pdf,9
+expected_effect,How effective could environmental activities or social media campaigns be? (expectation),3,35,105,1 Ineffective,4 Very effective,False,Survey responses.pdf,9
+expected_effect,How effective could environmental activities or social media campaigns be? (expectation),4,13,105,1 Ineffective,4 Very effective,False,Survey responses.pdf,9
+location,Where do you usually see trash on campus? (check all that apply),Cafeteria,54,105,,,True,Survey responses.pdf,2
+location,Where do you usually see trash on campus? (check all that apply),Soccer field,96,105,,,True,Survey responses.pdf,2
+location,Where do you usually see trash on campus? (check all that apply),Plaza,33,105,,,True,Survey responses.pdf,2
+location,Where do you usually see trash on campus? (check all that apply),Classrooms,22,105,,,True,Survey responses.pdf,2
+location,Where do you usually see trash on campus? (check all that apply),Hallways,33,105,,,True,Survey responses.pdf,2
+location,Where do you usually see trash on campus? (check all that apply),Bathrooms,25,105,,,True,Survey responses.pdf,2
+location,Where do you usually see trash on campus? (check all that apply),everywhere,2,105,,,True,Survey responses.pdf,2
+location,Where do you usually see trash on campus? (check all that apply),Everywhere,1,105,,,True,Survey responses.pdf,2
+location,Where do you usually see trash on campus? (check all that apply),no,1,105,,,True,Survey responses.pdf,2

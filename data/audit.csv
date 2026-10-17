@@ -1,0 +1,91 @@
+date,weekday,session,zone_id,zone_name,metric,grade,source_file,source_page,method_note_id
+2026-09-28,Monday,Snack,1,Basketball hub,Recycling (white bin),R,Audit records.pdf,1-2,audit-2026
+2026-09-28,Monday,Snack,1,Basketball hub,Organic (green bin),Y,Audit records.pdf,1-2,audit-2026
+2026-09-28,Monday,Snack,1,Basketball hub,Litter,G,Audit records.pdf,1-2,audit-2026
+2026-09-28,Monday,Snack,2,Cafeteria,Recycling (white bin),R,Audit records.pdf,1-2,audit-2026
+2026-09-28,Monday,Snack,2,Cafeteria,Organic (green bin),Y,Audit records.pdf,1-2,audit-2026
+2026-09-28,Monday,Snack,2,Cafeteria,Litter,Y,Audit records.pdf,1-2,audit-2026
+2026-09-28,Monday,Snack,3,Soccer field,Recycling (white bin),Y,Audit records.pdf,1-2,audit-2026
+2026-09-28,Monday,Snack,3,Soccer field,Organic (green bin),Y,Audit records.pdf,1-2,audit-2026
+2026-09-28,Monday,Snack,3,Soccer field,Litter,R,Audit records.pdf,1-2,audit-2026
+2026-09-28,Monday,Lunch,1,Basketball hub,Recycling (white bin),R,Audit records.pdf,1-2,audit-2026
+2026-09-28,Monday,Lunch,1,Basketball hub,Organic (green bin),G,Audit records.pdf,1-2,audit-2026
+2026-09-28,Monday,Lunch,1,Basketball hub,Litter,Y,Audit records.pdf,1-2,audit-2026
+2026-09-28,Monday,Lunch,2,Cafeteria,Recycling (white bin),R,Audit records.pdf,1-2,audit-2026
+2026-09-28,Monday,Lunch,2,Cafeteria,Organic (green bin),Y,Audit records.pdf,1-2,audit-2026
+2026-09-28,Monday,Lunch,2,Cafeteria,Litter,Y,Audit records.pdf,1-2,audit-2026
+2026-09-28,Monday,Lunch,3,Soccer field,Recycling (white bin),Y,Audit records.pdf,1-2,audit-2026
+2026-09-28,Monday,Lunch,3,Soccer field,Organic (green bin),R,Audit records.pdf,1-2,audit-2026
+2026-09-28,Monday,Lunch,3,Soccer field,Litter,Y,Audit records.pdf,1-2,audit-2026
+2026-09-29,Tuesday,Snack,1,Basketball hub,Recycling (white bin),R,Audit records.pdf,1-2,audit-2026
+2026-09-29,Tuesday,Snack,1,Basketball hub,Organic (green bin),G,Audit records.pdf,1-2,audit-2026
+2026-09-29,Tuesday,Snack,1,Basketball hub,Litter,G,Audit records.pdf,1-2,audit-2026
+2026-09-29,Tuesday,Snack,2,Cafeteria,Recycling (white bin),Y,Audit records.pdf,1-2,audit-2026
+2026-09-29,Tuesday,Snack,2,Cafeteria,Organic (green bin),Y,Audit records.pdf,1-2,audit-2026
+2026-09-29,Tuesday,Snack,2,Cafeteria,Litter,R,Audit records.pdf,1-2,audit-2026
+2026-09-29,Tuesday,Snack,3,Soccer field,Recycling (white bin),G,Audit records.pdf,1-2,audit-2026
+2026-09-29,Tuesday,Snack,3,Soccer field,Organic (green bin),Y,Audit records.pdf,1-2,audit-2026
+2026-09-29,Tuesday,Snack,3,Soccer field,Litter,R,Audit records.pdf,1-2,audit-2026
+2026-09-29,Tuesday,Lunch,1,Basketball hub,Recycling (white bin),R,Audit records.pdf,1-2,audit-2026
+2026-09-29,Tuesday,Lunch,1,Basketball hub,Organic (green bin),G,Audit records.pdf,1-2,audit-2026
+2026-09-29,Tuesday,Lunch,1,Basketball hub,Litter,G,Audit records.pdf,1-2,audit-2026
+2026-09-29,Tuesday,Lunch,2,Cafeteria,Recycling (white bin),R,Audit records.pdf,1-2,audit-2026
+2026-09-29,Tuesday,Lunch,2,Cafeteria,Organic (green bin),Y,Audit records.pdf,1-2,audit-2026
+2026-09-29,Tuesday,Lunch,2,Cafeteria,Litter,G,Audit records.pdf,1-2,audit-2026
+2026-09-29,Tuesday,Lunch,3,Soccer field,Recycling (white bin),G,Audit records.pdf,1-2,audit-2026
+2026-09-29,Tuesday,Lunch,3,Soccer field,Organic (green bin),Y,Audit records.pdf,1-2,audit-2026
+2026-09-29,Tuesday,Lunch,3,Soccer field,Litter,G,Audit records.pdf,1-2,audit-2026
+2026-09-30,Wednesday,Snack,1,Basketball hub,Recycling (white bin),Y,Audit records.pdf,1-2,audit-2026
+2026-09-30,Wednesday,Snack,1,Basketball hub,Organic (green bin),R,Audit records.pdf,1-2,audit-2026
+2026-09-30,Wednesday,Snack,1,Basketball hub,Litter,G,Audit records.pdf,1-2,audit-2026
+2026-09-30,Wednesday,Snack,2,Cafeteria,Recycling (white bin),Y,Audit records.pdf,1-2,audit-2026
+2026-09-30,Wednesday,Snack,2,Cafeteria,Organic (green bin),Y,Audit records.pdf,1-2,audit-2026
+2026-09-30,Wednesday,Snack,2,Cafeteria,Litter,R,Audit records.pdf,1-2,audit-2026
+2026-09-30,Wednesday,Snack,3,Soccer field,Recycling (white bin),R,Audit records.pdf,1-2,audit-2026
+2026-09-30,Wednesday,Snack,3,Soccer field,Organic (green bin),R,Audit records.pdf,1-2,audit-2026
+2026-09-30,Wednesday,Snack,3,Soccer field,Litter,R,Audit records.pdf,1-2,audit-2026
+2026-09-30,Wednesday,Lunch,1,Basketball hub,Recycling (white bin),R,Audit records.pdf,1-2,audit-2026
+2026-09-30,Wednesday,Lunch,1,Basketball hub,Organic (green bin),R,Audit records.pdf,1-2,audit-2026
+2026-09-30,Wednesday,Lunch,1,Basketball hub,Litter,Y,Audit records.pdf,1-2,audit-2026
+2026-09-30,Wednesday,Lunch,2,Cafeteria,Recycling (white bin),G,Audit records.pdf,1-2,audit-2026
+2026-09-30,Wednesday,Lunch,2,Cafeteria,Organic (green bin),G,Audit records.pdf,1-2,audit-2026
+2026-09-30,Wednesday,Lunch,2,Cafeteria,Litter,G,Audit records.pdf,1-2,audit-2026
+2026-09-30,Wednesday,Lunch,3,Soccer field,Recycling (white bin),R,Audit records.pdf,1-2,audit-2026
+2026-09-30,Wednesday,Lunch,3,Soccer field,Organic (green bin),Y,Audit records.pdf,1-2,audit-2026
+2026-09-30,Wednesday,Lunch,3,Soccer field,Litter,R,Audit records.pdf,1-2,audit-2026
+2026-10-01,Thursday,Snack,1,Basketball hub,Recycling (white bin),R,Audit records.pdf,1-2,audit-2026
+2026-10-01,Thursday,Snack,1,Basketball hub,Organic (green bin),R,Audit records.pdf,1-2,audit-2026
+2026-10-01,Thursday,Snack,1,Basketball hub,Litter,G,Audit records.pdf,1-2,audit-2026
+2026-10-01,Thursday,Snack,2,Cafeteria,Recycling (white bin),R,Audit records.pdf,1-2,audit-2026
+2026-10-01,Thursday,Snack,2,Cafeteria,Organic (green bin),R,Audit records.pdf,1-2,audit-2026
+2026-10-01,Thursday,Snack,2,Cafeteria,Litter,G,Audit records.pdf,1-2,audit-2026
+2026-10-01,Thursday,Snack,3,Soccer field,Recycling (white bin),G,Audit records.pdf,1-2,audit-2026
+2026-10-01,Thursday,Snack,3,Soccer field,Organic (green bin),R,Audit records.pdf,1-2,audit-2026
+2026-10-01,Thursday,Snack,3,Soccer field,Litter,R,Audit records.pdf,1-2,audit-2026
+2026-10-01,Thursday,Lunch,1,Basketball hub,Recycling (white bin),R,Audit records.pdf,1-2,audit-2026
+2026-10-01,Thursday,Lunch,1,Basketball hub,Organic (green bin),Y,Audit records.pdf,1-2,audit-2026
+2026-10-01,Thursday,Lunch,1,Basketball hub,Litter,G,Audit records.pdf,1-2,audit-2026
+2026-10-01,Thursday,Lunch,2,Cafeteria,Recycling (white bin),R,Audit records.pdf,1-2,audit-2026
+2026-10-01,Thursday,Lunch,2,Cafeteria,Organic (green bin),R,Audit records.pdf,1-2,audit-2026
+2026-10-01,Thursday,Lunch,2,Cafeteria,Litter,R,Audit records.pdf,1-2,audit-2026
+2026-10-01,Thursday,Lunch,3,Soccer field,Recycling (white bin),Y,Audit records.pdf,1-2,audit-2026
+2026-10-01,Thursday,Lunch,3,Soccer field,Organic (green bin),Y,Audit records.pdf,1-2,audit-2026
+2026-10-01,Thursday,Lunch,3,Soccer field,Litter,R,Audit records.pdf,1-2,audit-2026
+2026-10-02,Friday,Snack,1,Basketball hub,Recycling (white bin),G,Audit records.pdf,1-2,audit-2026
+2026-10-02,Friday,Snack,1,Basketball hub,Organic (green bin),G,Audit records.pdf,1-2,audit-2026
+2026-10-02,Friday,Snack,1,Basketball hub,Litter,G,Audit records.pdf,1-2,audit-2026
+2026-10-02,Friday,Snack,2,Cafeteria,Recycling (white bin),Y,Audit records.pdf,1-2,audit-2026
+2026-10-02,Friday,Snack,2,Cafeteria,Organic (green bin),G,Audit records.pdf,1-2,audit-2026
+2026-10-02,Friday,Snack,2,Cafeteria,Litter,Y,Audit records.pdf,1-2,audit-2026
+2026-10-02,Friday,Snack,3,Soccer field,Recycling (white bin),R,Audit records.pdf,1-2,audit-2026
+2026-10-02,Friday,Snack,3,Soccer field,Organic (green bin),R,Audit records.pdf,1-2,audit-2026
+2026-10-02,Friday,Snack,3,Soccer field,Litter,Y,Audit records.pdf,1-2,audit-2026
+2026-10-02,Friday,Lunch,1,Basketball hub,Recycling (white bin),G,Audit records.pdf,1-2,audit-2026
+2026-10-02,Friday,Lunch,1,Basketball hub,Organic (green bin),G,Audit records.pdf,1-2,audit-2026
+2026-10-02,Friday,Lunch,1,Basketball hub,Litter,G,Audit records.pdf,1-2,audit-2026
+2026-10-02,Friday,Lunch,2,Cafeteria,Recycling (white bin),G,Audit records.pdf,1-2,audit-2026
+2026-10-02,Friday,Lunch,2,Cafeteria,Organic (green bin),G,Audit records.pdf,1-2,audit-2026
+2026-10-02,Friday,Lunch,2,Cafeteria,Litter,Y,Audit records.pdf,1-2,audit-2026
+2026-10-02,Friday,Lunch,3,Soccer field,Recycling (white bin),R,Audit records.pdf,1-2,audit-2026
+2026-10-02,Friday,Lunch,3,Soccer field,Organic (green bin),R,Audit records.pdf,1-2,audit-2026
+2026-10-02,Friday,Lunch,3,Soccer field,Litter,G,Audit records.pdf,1-2,audit-2026
