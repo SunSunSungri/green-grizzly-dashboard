@@ -3,6 +3,12 @@ import plotly.graph_objects as go
 import streamlit as st
 import metrics as m
 
+def style(fig):
+    fig.update_layout(paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
+                      font=dict(family="Atkinson Hyperlegible, sans-serif", size=15, color="#173B2A"))
+    fig.update_xaxes(gridcolor="#D5E3C8"); fig.update_yaxes(gridcolor="#D5E3C8")
+    return fig
+
 st.set_page_config(page_title="Green Grizzly campus waste audit", layout="wide")
 
 @st.cache_data
@@ -30,24 +36,51 @@ st.markdown(f"**2025 survey:** {sf_n} of {sf_N} respondents selected the soccer 
 st.caption("Red means 16 or more visible pieces or a concentrated pile. These are different measures, about a year apart. "
            "Both point to a continuing concern.")
 
-loc = st.radio("Location", LOCS, horizontal=True, key="loc")
-sess = st.radio("Audit session (changes audit figures only)", SESS, horizontal=True, key="sess")
+loc = st.segmented_control("Location", LOCS, default=LOCS[0], key="loc") or LOCS[0]
+sess = st.segmented_control("Audit session (changes audit figures only)", SESS, default=SESS[0], key="sess") or SESS[0]
 st.button("Reset filters", on_click=reset)
 zone = None if loc.startswith("All") else loc
 session = None if sess.startswith("All") else sess
 st.caption(f"Showing audit observations for: {loc}, {sess.lower()}. The 2025 survey is not filtered.")
 
-c1, c2 = st.columns(2)
-for col, kind, label in [(c1, "litter", "Litter checks rated Red"), (c2, "bin", "Bin checks rated Yellow or Red")]:
-    s = m.audit_share(audit, kind, zone, session)
+NAMES = list(m.ZONES.values())
+ORDER = {"Snack": 0, "Lunch": 1}
+
+def boxes(zone_name, metric):
+    d = audit[(audit["zone_name"] == zone_name) & (audit["metric"] == metric)]
+    if session:
+        d = d[d["session"] == session]
+    d = d.sort_values(["date", "session"], key=lambda c: c.map(ORDER) if c.name == "session" else c)
+    cells = "".join(
+        f'<span title="{r.weekday} {r.session.lower()}: {r.grade}" style="display:inline-flex;align-items:center;'
+        f'justify-content:center;width:36px;height:36px;margin:0 4px 4px 0;border-radius:4px;font-weight:700;'
+        f'background:{BG[r.grade]};color:{FG[r.grade]};border:1px solid {FG[r.grade]}">{r.grade}</span>'
+        for r in d.itertuples())
+    return f'<div style="margin:8px 0 4px;font-weight:700">{zone_name}, {metric.lower()}</div><div>{cells}</div>'
+
+def tally(col, kind, label, metrics):
+    s_ = m.audit_share(audit, kind, zone, session)
     with col:
-        if s is None:
+        if s_ is None:
             st.info("No observations for this selection.")
-        else:
-            st.metric(label, f"{s[0]} of {s[1]}")
-            st.caption(f"{m.pct(s)} of {s[1]} checks")
+            return
+        st.subheader(f"{s_[0]} of {s_[1]} {label}")
+        st.caption(f"{m.pct(s_)} of {s_[1]} checks. Each box is one check, from Monday snack to Friday lunch.")
+        st.markdown("".join(boxes(z, mt) for z in ([zone] if zone else NAMES) for mt in metrics), unsafe_allow_html=True)
+
+c1, c2 = st.columns(2)
+tally(c1, "litter", "litter checks rated Red", [m.LITTER])
+tally(c2, "bin", "bin checks rated Yellow or Red", m.BIN)
 st.caption("Bin checks combine the recycling (white) bin and the organic (green) bin. "
            "Green and Yellow here are grades, not bin colors.")
+
+st.subheader("Make a guess")
+guess = st.pills("Which location had the most Red litter checks in the whole audit?", NAMES, key="guess")
+if guess:
+    reds = {z: m.audit_share(audit, "litter", z) for z in NAMES}
+    top = max(reds, key=lambda z: reds[z][0])
+    st.markdown(f"**{top}** had the most, with {reds[top][0]} of {reds[top][1]} litter checks rated Red. "
+                f"{guess} had {reds[guess][0]} of {reds[guess][1]}.")
 
 left, right = st.columns(2)
 with left:
@@ -58,7 +91,7 @@ with left:
                            text=[f"{c}/{sf_N} ({c / sf_N * 100:.1f}%)" for c in lo["count"]], textposition="outside"))
     fig.update_xaxes(range=[0, 130], tickvals=[0, 25, 50, 75, 100], title=f"% of {sf_N} respondents")
     fig.update_layout(title="Where students usually saw trash", margin=dict(l=8, r=8, t=48, b=8), height=360)
-    st.plotly_chart(fig)
+    st.plotly_chart(style(fig))
     st.caption("Other entries kept in the data file: everywhere (3 respondents) and no (1). "
                "The basketball hub was not a survey option, so it has no survey figure.")
 with right:
@@ -73,7 +106,7 @@ with right:
                     text=[f"{s[0]}/{s[1]} ({m.pct(s)})" if s else "no data" for s in ss])
     fig.update_yaxes(range=[0, 115], tickvals=[0, 25, 50, 75, 100], title="% of checks")
     fig.update_layout(barmode="group", margin=dict(l=8, r=8, t=24, b=8), height=360, legend=dict(orientation="h", y=-0.15))
-    st.plotly_chart(fig)
+    st.plotly_chart(style(fig))
     bh = [m.audit_share(audit, k, "Basketball hub", session) for k in ("litter", "bin")]
     if all(bh):
         st.caption(f"Basketball hub: {bh[0][0]} of {bh[0][1]} litter checks Red, but {bh[1][0]} of {bh[1][1]} bin checks Yellow or Red.")
@@ -97,7 +130,8 @@ st.subheader("Context from the auditors")
 st.markdown("These are auditor notes, not proven causes. Lunch soccer tournaments and student-council cleanup on the field affected "
             "lunch conditions. The cafeteria was all Green on Wednesday lunch when students left for a tournament. "
             "Green organic-bin grades often meant the bin was empty. Auditors sometimes found white bags in the trash bin and black bags in the recycling bin.")
-st.info("Take your rubbish with you. Check the bin label before you leave.")
+st.subheader("Take your rubbish with you.")
+st.write("Check the bin label before you leave.")
 
 with st.expander("How we measured"):
     st.markdown(f"**Audit:** {meth['audit_period']}.  \n**Survey:** {meth['survey_period']}")
